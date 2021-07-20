@@ -1,0 +1,316 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\Project.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\Project.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6140101: Last Updated: Wed Feb  3 13:45:28 2021
+<BR><P>
+<H3>Maximum Stack Usage =          0 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[0]">Reset_Handler</a>
+ <LI><a href="#[d]">Nokia_Init</a>
+ <LI><a href="#[e]">send_1B_nokia</a>
+ <LI><a href="#[f]">Clear_Nokia</a>
+ <LI><a href="#[10]">Print_Char_Nokia</a>
+ <LI><a href="#[11]">Print_Str_Nokia</a>
+ <LI><a href="#[12]">Set_XY_Nokia</a>
+ <LI><a href="#[13]">normal_mode_ui</a>
+ <LI><a href="#[16]">adjustment_mode_ui</a>
+ <LI><a href="#[17]">braking_mode_ui</a>
+ <LI><a href="#[14]">print_3digit_number</a>
+ <LI><a href="#[15]">print_progress_bar</a>
+ <LI><a href="#[1b]">small_delay</a>
+ <LI><a href="#[18]">normal_mode</a>
+ <LI><a href="#[19]">adjustment_mode</a>
+ <LI><a href="#[1c]">braking_mode</a>
+ <LI><a href="#[b]">__main</a>
+ <LI><a href="#[1f]">timer3_config</a>
+ <LI><a href="#[1d]">ultrasound</a>
+ <LI><a href="#[20]">ADC_initialization</a>
+ <LI><a href="#[1a]">ADC_sampling</a>
+ <LI><a href="#[c]">My_Timer0A_Handler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[1]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NMI_Handler</a><BR>
+ <LI><a href="#[2]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2]">HardFault_Handler</a><BR>
+ <LI><a href="#[3]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">MemManage_Handler</a><BR>
+ <LI><a href="#[4]">BusFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">BusFault_Handler</a><BR>
+ <LI><a href="#[5]">UsageFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">UsageFault_Handler</a><BR>
+ <LI><a href="#[6]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6]">SVC_Handler</a><BR>
+ <LI><a href="#[7]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7]">DebugMon_Handler</a><BR>
+ <LI><a href="#[8]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[8]">PendSV_Handler</a><BR>
+ <LI><a href="#[9]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9]">SysTick_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[4]">BusFault_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[7]">DebugMon_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[3]">MemManage_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[8]">PendSV_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[6]">SVC_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[9]">SysTick_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[a]">Timer0A_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[5]">UsageFault_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>Timer0A_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;My_Timer0A_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[22]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[23]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[d]"></a>Nokia_Init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, nokia_lcd.o(display))
+<BR><BR>[Calls]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Clear_Nokia
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_1B_nokia
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[e]"></a>send_1B_nokia</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, nokia_lcd.o(display))
+<BR><BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_XY_Nokia
+<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_Char_Nokia
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Clear_Nokia
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Nokia_Init
+</UL>
+
+<P><STRONG><a name="[f]"></a>Clear_Nokia</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, nokia_lcd.o(display))
+<BR><BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_1B_nokia
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;normal_mode_ui
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;braking_mode_ui
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adjustment_mode_ui
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Nokia_Init
+</UL>
+
+<P><STRONG><a name="[10]"></a>Print_Char_Nokia</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, nokia_lcd.o(display))
+<BR><BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_1B_nokia
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_progress_bar
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_3digit_number
+<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_Str_Nokia
+</UL>
+
+<P><STRONG><a name="[11]"></a>Print_Str_Nokia</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, nokia_lcd.o(display))
+<BR><BR>[Calls]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_Char_Nokia
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;normal_mode_ui
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;braking_mode_ui
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adjustment_mode_ui
+</UL>
+
+<P><STRONG><a name="[12]"></a>Set_XY_Nokia</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, nokia_lcd.o(display))
+<BR><BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_1B_nokia
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_progress_bar
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;normal_mode_ui
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;braking_mode_ui
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adjustment_mode_ui
+</UL>
+
+<P><STRONG><a name="[13]"></a>normal_mode_ui</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, nokia_lcd.o(display))
+<BR><BR>[Calls]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_progress_bar
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_3digit_number
+<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_XY_Nokia
+<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_Str_Nokia
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Clear_Nokia
+</UL>
+<BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;normal_mode
+</UL>
+
+<P><STRONG><a name="[16]"></a>adjustment_mode_ui</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, nokia_lcd.o(display))
+<BR><BR>[Calls]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_3digit_number
+<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_XY_Nokia
+<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_Str_Nokia
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Clear_Nokia
+</UL>
+<BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adjustment_mode
+</UL>
+
+<P><STRONG><a name="[17]"></a>braking_mode_ui</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, nokia_lcd.o(display))
+<BR><BR>[Calls]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_progress_bar
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_3digit_number
+<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_XY_Nokia
+<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_Str_Nokia
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Clear_Nokia
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;braking_mode
+</UL>
+
+<P><STRONG><a name="[14]"></a>print_3digit_number</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, nokia_lcd.o(display))
+<BR><BR>[Calls]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_Char_Nokia
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;normal_mode_ui
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;braking_mode_ui
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adjustment_mode_ui
+</UL>
+
+<P><STRONG><a name="[15]"></a>print_progress_bar</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, nokia_lcd.o(display))
+<BR><BR>[Calls]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_XY_Nokia
+<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_Char_Nokia
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;normal_mode_ui
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;braking_mode_ui
+</UL>
+
+<P><STRONG><a name="[1b]"></a>small_delay</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, main.o(main))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;braking_mode
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adjustment_mode
+</UL>
+
+<P><STRONG><a name="[18]"></a>normal_mode</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, main.o(main))
+<BR><BR>[Calls]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;normal_mode_ui
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[19]"></a>adjustment_mode</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, main.o(main))
+<BR><BR>[Calls]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adjustment_mode_ui
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;small_delay
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_sampling
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[1c]"></a>braking_mode</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, main.o(main))
+<BR><BR>[Calls]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ultrasound
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;braking_mode_ui
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;small_delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[b]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, main.o(main))
+<BR><BR>[Calls]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ultrasound
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer3_config
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PULSE_INIT
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Nokia_Init
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;braking_mode
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adjustment_mode
+<LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;normal_mode
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;small_delay
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_initialization
+</UL>
+<BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[1f]"></a>timer3_config</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, ultrasound_echo.o(main))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[1d]"></a>ultrasound</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, ultrasound_echo.o(main))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;braking_mode
+</UL>
+
+<P><STRONG><a name="[20]"></a>ADC_initialization</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, adc.o(routines))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[1a]"></a>ADC_sampling</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, adc.o(routines))
+<BR><BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adjustment_mode
+</UL>
+
+<P><STRONG><a name="[c]"></a>My_Timer0A_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, ultrasound_trig.o(routines))
+<BR><BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer0A_Handler
+</UL>
+
+<P><STRONG><a name="[1e]"></a>PULSE_INIT</STRONG> (Thumb, 152 bytes, Stack size 0 bytes, ultrasound_trig.o(routines))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>
